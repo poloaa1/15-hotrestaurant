@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Tables</title>
+  <!-- CSS & JavaScript links -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+<body>
+  <div class="container">
+    <!-- Script -->
+    <div class="jumbotron">
+      <h1 class="text-center">Hot Restaurant</h1>
+      <hr>
+      <h2 class="text-center">Current Reservations</h2>
+      <br>
+    <!-- Nav Buttons -->
+      <div class="text-center">
+        <a href="reservations.html"><button class="">Make Reservation</button></a>
+        <a href="/home"><button class="">Home</button></a>
+      </div>
+    </div>
+        <!-- Current Reservations -->
+        <div class="card">
+          <div class="card-header">
+            <h4>Current Reservations</h4>
+          </div>
+          <div class="card-body">
+            <ul id="tableList" class="list-group"></ul>
+          </div>
+        </div>
+        <!-- Waiting List -->
+        <div class="card">
+          <div class="card-header">
+            <h4>Waiting List</h4>
+          </div>
+          <div class="card-body">
+            <ul id="waitList" class="list-group"></ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Bottom Links -->
+    <footer class="">
+      <div class="container">
+        <p>Control Panel</p>
+        <p><a href="#" id="clear">Clear Table</a> | <a href="/api/tables">API Table Link</a> | <a href="/api/waitlist">API
+            Wait List</a>
+      </div>
+    </footer>
+  </div>
+</body>
